@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elektron Majmua</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <div class="menu-item" onclick="toggleSubmenu(event, 'amaliyot-submenu')">
+                    <i class="fas fa-flask"></i> Amaliyot
+                    <div class="submenu" id="amaliyot-submenu"></div>
+                </div>
+                <div class="menu-item" onclick="toggleSubmenu(event, 'maruza-submenu')">
+                    <i class="fas fa-book-open"></i> Maruza
+                    <div class="submenu" id="maruza-submenu"></div>
+                </div>
+            </nav>
+        </aside>
+        <main id="pdf-viewer" class="viewer"></main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
